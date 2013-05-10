@@ -1,0 +1,153 @@
+/*[fmt]0A10-00AA-364*/
+html, body{
+ width:100%; height:100%; overflow:hidden;
+}
+html{
+ font:10px/1em sans-serif;
+}
+.int{
+ text-align:right;
+}
+.positive{
+ color:#008000;
+}
+.negative{
+ color:#FF0000;
+}
+#orkfia{
+ width:100%; height:100%; position:fixed; left:0; top:0; z-index:1; background:transparent;border:0
+}
+/*Menu bar*/
+nav{
+ position:fixed; top:10px; right:10px; z-index:200; background:#CDCDCD; padding:5px; line-height:26px; height:26px; vertical-align:middle;
+}
+nav li{
+ display:inline-block; vertical-align:top;
+}
+nav li.separator{
+ width:1px; background:#8A8A8A; border-right:1px solid #ECECEC;
+}
+nav li a{
+ display:block; width:auto; height:16px; padding:5px; border:1px solid #AAAAAA; cursor:pointer; border-radius:2px; font:bold 12px/16px sans-serif; text-decoration:none; color:#646161;
+}
+nav li a:hover{
+ border:1px solid #5D5D5D; box-shadow:1px 2px 4px #828282;
+}
+nav li a.active{
+ border:1px solid #9D9D9D; background:#F4F4F4;
+}
+/*Global widgets*/
+.widget{
+ position:absolute; top:10px; left:10px; background-color:#DDD; z-index:10; border-radius:5px; overflow:hidden; min-width:150px; min-height:174px; display:none;
+}
+.widget header{
+ height:18px; background:#828282; color:#FFFFFF; border-radius:5px 5px 0 0; padding:3px 30px 3px 10px;
+}
+.widget.ui-draggable header{
+ cursor:url(/orkfia/inc/images/openhand_8_8.cur), pointer;
+}
+.widget header h2{
+ font:13px/18px sans-serif;
+}
+.widget header a{
+ position:absolute; right:1px; top:1px; z-index:100; width:16px; height:16px; padding:3px; cursor:pointer;
+}
+.widget .content{
+ box-sizing: border-box;
+ overflow:auto; min-width:150px; min-height:150px; border:1px solid #B3B3B3; margin:2px; padding:3px;
+}
+.widget h3{
+ font:bold 1.2em sans-serif; padding:5px 0 15px;
+}
+/*Mibbit chat*/
+#mibbit iframe{
+ width:100%; height:100%;
+ resize: none; min-width:350px; min-height:400px; 
+}
+#mibbit{
+ background:#222222;
+}
+#mibbit .content {
+ resize: both; min-width:350px; min-height:400px; 
+}
+/*Attack calculator*/
+#attack table{
+ border-collapse:collapse; background-color:#DDDDDD; border:2px solid #DDD; width:280px; float:left; margin:7px;
+}
+#attack input{
+ background-color:#CCCCCC; font-size:10px; float:left; text-align:right; margin-right:2px;
+}
+#attack *[contenteditable]{
+ min-width:10px; display:inline-block;
+}
+#attack *[contenteditable]:hover{
+ outline:2px dotted #FFA500;
+}
+#attack textarea{
+ overflow:hidden; width:95%;
+}
+#attack a{
+ color:#808080; font-style:oblique;
+}
+#attack hr{
+ width:75%;
+}
+#attack h2{
+ margin:0; padding:0;
+}
+#attack .int{
+ text-align:right;
+}
+#attack th{
+ text-align:left;
+}
+#attack .win{
+ color:#008000; font-weight:bold;
+}
+#attack .lose{
+ color:#FF0000; font-weight:bold;
+}
+/*Construction helper*/
+#construction{
+
+}
+#construction .content{
+
+}
+#construction table{
+ width:100%;
+}
+#construction input{
+ text-align:right; width:32px;
+}
+#construction td, #construction th{
+ min-width:30px; border:0;
+}
+#construction tbody tr:hover{
+ background-color:rgba(190, 190, 190, 0.5);
+}
+#construction tbody td{
+ border-left:thin solid rgba(150, 150, 150, 0.5);
+}
+#construction tbody{
+ border-bottom:thin solid rgba(150, 150, 150, 0.5);
+}
+#construction textarea{
+ width:100%; height:50px; width:200px;
+}
+#construction .example{
+	display:none;
+}
+/*Settings*/
+#settings p{
+ clear:both;
+}
+#settings p+p{
+ padding-top:5px;
+}
+#settings label{
+ display:block; line-height:18px;
+}
+#settings label input{
+ float:right; padding:1px 2px; line-height:16px; margin-left:10px;
+}
